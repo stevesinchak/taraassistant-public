@@ -1,0 +1,22 @@
+name: "Tara Assistant Add-On"
+description: >-
+  An intelligent assistant addon for Home Assistant
+url: https://github.com/stevesinchak/taraassistant-public
+version: "1.0.0"
+slug: taraassistant-public
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+apparmor: true
+options:
+  port: 8000
+schema:
+  port: "int"
+init: false
+uart: true
+
+image: "ghcr.io/tarahome/taraassistant:{arch}-latest"
+
