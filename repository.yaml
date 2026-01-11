@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Tara Assistant Add-On
+url: 'https://github.com/stevesinchak/taraassistant-public'
+maintainer: stevesinchak
