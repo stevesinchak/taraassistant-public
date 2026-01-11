@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "slug": "tara_assistant",
+  "name": "Tara Assistant",
+  "description": "An intelligent assistant addon for Home Assistant",
+  "startup": "services",
+  "boot": "auto",
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "ports": {
+    "8000/tcp": 8000
+  },
+  "ports_description": {
+    "8000/tcp": "Tara Assistant HTTP interface"
+  },
+  "volumes": {
+    "/data": "persistent"
+  },
+  "image": "ghcr.io/tarahome/taraassistant:{arch}-latest",
+  "options": {},
+  "schema": {},
+  "environment": {},
+  "privileged": [],
+  "devices": [],
+  "homeassistant": "2024.1.0",
+  "host_dbus": false
+}
