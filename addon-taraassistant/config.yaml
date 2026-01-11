@@ -1,20 +1,20 @@
-name: "Tara Assistant"
-description: "An intelligent assistant addon for Home Assistant"
+name: Tara Assistant
+description: An intelligent assistant addon for Home Assistant
 version: "1.0.0"
-slug: "tara_assistant"
-startup: "services"
-boot: "auto"
+slug: tara_assistant
+startup: services
+boot: auto
 arch:
   - amd64
   - arm64
 ports:
   8000/tcp: null
 ports_description:
-  8000/tcp: "Tara Assistant HTTP interface"
+  8000/tcp: Tara Assistant HTTP interface
 volumes:
-  /data: "persistent"
-image: "ghcr.io/tarahome/taraassistant:{arch}-latest"
+  /data: persistent
+image: ghcr.io/tarahome/taraassistant:{arch}-latest
 options:
   port: 8000
 schema:
-  port: "int(1024,65535)"
+  port: int(1024,65535)
