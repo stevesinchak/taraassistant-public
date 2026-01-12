@@ -6,7 +6,6 @@ startup: services
 boot: auto
 arch:
   - amd64
-  - arm64
 ports:
   8000/tcp: null
 ports_description:
