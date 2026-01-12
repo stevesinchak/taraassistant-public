@@ -12,7 +12,7 @@ ports_description:
   8000/tcp: Tara Assistant HTTP interface
 volumes:
   /data: persistent
-image: ghcr.io/tarahome/taraassistant:{arch}-latest
+image: ghcr.io/tarahome/taraassistant:latest
 options:
   port: 8000
 schema:
