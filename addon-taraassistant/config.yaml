@@ -1,5 +1,6 @@
 name: Tara Assistant
 description: An intelligent assistant addon for Home Assistant
+version: "2038414"
 slug: tara_assistant
 startup: services
 boot: auto
