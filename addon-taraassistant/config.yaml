@@ -7,7 +7,7 @@ boot: auto
 arch:
   - amd64
 ports:
-  8000/tcp: null
+  8000/tcp: 8000
 ports_description:
   8000/tcp: Tara Assistant HTTP interface
 volumes:
